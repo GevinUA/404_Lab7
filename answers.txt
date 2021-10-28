@@ -1,0 +1,54 @@
+Question 0: What is the URL of your python flask_restfull code on github???
+
+
+
+Question 1: How are Flask and Django different? What does Django provide for you that Flask does not?
+
+--Flask supports API, where Django doesn't
+--Flask does not support dynamic HTML, where Django does
+--Flask provides various working style, where Django only provides Monolithic
+--Flask URL dispatcher is RESTful request, where Django's based on controller-regex
+
+Django provides the supporing of dynamic HTML, flask does not.
+
+
+Question 2: What does REST stand for? When I say something is RESTful, what does that mean?
+
+REST stands for Representational State Transfer. It’s an architectural pattern for creating web services. The RESTful means the web service that implements such pattern.
+
+
+Question 3: What does CRUD stand for? For each letter in CRUD, give the associated HTTP method.
+
+C stands for create, http method is POST
+R stands for retrieve, http method is GET
+U stands for Update, http method is PUT
+D stand for delete, http method is DELETE
+
+
+Question 4: What do HTTP 1XX Status Codes mean? HTTP 2xx? HTTP 3xx? HTTP 4xx? HTTP 5xx?
+
+According to the MDN Web Docs, 
+1xx means informational responses,
+2xx means Successful responses,
+3xx means Redirect messages,
+4xx means Client error responses,
+5xx means Server error responses.
+
+
+Question 5: What is an XSS attack? Provide one way a site can be vulnerable to an XSS attack.
+
+XSS attack means cross-site scripting attacks, referred to as hacker executes the malicious JavaScript within client's browser through some
+vurnerable part of the website. By running their own code, hackers could steal some sensitive informations from browser or doing some
+other bad actions.
+
+A site can be vulnerable for many different ways. For example, it does not have the process of EscapeHTML(). If it does not replace the
+special characters, browser cannot distinguish if it is the actual input from the user or an executable snippet of code. 
+The consequence will be that hackers could execute JavaScript and steal informations.
+
+
+Question 6: What does CORS stand for? What situation in web application development will you need to implement CORS protection?
+
+CORS stands for Cross-Origin Resource Sharing, it allows us to make requests from one website to another website in the browser, which normally prohibited. For Frontend-backend separated application, we need to implement CORS, because we need to send request from frontend to the server.
+
+
+
